@@ -1,0 +1,11 @@
+export { Hero } from "./hero";
+export { TrustedBy } from "./trusted-by";
+export { ServicesShowcase } from "./services-showcase";
+export { Portfolio } from "./portfolio";
+export { Process } from "./process";
+export { Stats } from "./stats";
+export { Testimonials } from "./testimonials";
+export { TeamPreview } from "./team-preview";
+export { BlogPreview } from "./blog-preview";
+export { FAQ } from "./faq";
+export { CTA } from "./cta";

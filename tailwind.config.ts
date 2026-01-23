@@ -1,4 +1,3 @@
-// tailwind.config.ts
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -18,7 +17,6 @@ const config: Config = {
     },
     extend: {
       colors: {
-        // Brand colors - Electric Cyan accent on deep black
         brand: {
           50: "#ecfeff",
           100: "#cffafe",
@@ -32,22 +30,21 @@ const config: Config = {
           900: "#164e63",
           950: "#083344",
         },
-        // Background colors
+      
         background: {
-          DEFAULT: "#020617", // slate-950
-          secondary: "#0f172a", // slate-900
-          tertiary: "#1e293b", // slate-800
+          DEFAULT: "#020617",
+          secondary: "#0f172a",
+          tertiary: "#1e293b",
         },
-        // Foreground colors
+      
         foreground: {
-          DEFAULT: "#f8fafc", // slate-50
-          muted: "#94a3b8", // slate-400
-          subtle: "#64748b", // slate-500
+          DEFAULT: "#f8fafc",
+          muted: "#94a3b8",
+          subtle: "#64748b",
         },
-        // Border colors
         border: {
-          DEFAULT: "#1e293b", // slate-800
-          strong: "#334155", // slate-700
+          DEFAULT: "#1e293b", 
+          strong: "#334155", 
         },
       },
       fontFamily: {

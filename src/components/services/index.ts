@@ -1,0 +1,12 @@
+export { ServicesHero } from "./services-hero";
+export { ServicesGrid } from "./services-grid";
+export { ServicesProcess } from "./services-process";
+export { ServicesCTA } from "./services-cta";
+export { ServiceDetailHero } from "./service-detail-hero";
+export { ServiceDetailContent } from "./service-detail-content";
+export { ServiceDetailFeatures } from "./service-detail-features";
+export { ServiceDetailTech } from "./service-detail-tech";
+export { ServiceDetailCaseStudies } from "./service-detail-case-studies";
+export { ServiceDetailFAQ } from "./service-detail-faq";
+export { ServiceDetailCTA } from "./service-detail-cta";
+export { ServiceDetailRelated } from "./service-detail-related";
