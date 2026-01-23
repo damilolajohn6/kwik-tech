@@ -54,7 +54,7 @@ export function AboutStory() {
               transition={{ delay: 0.4 }}
               className="absolute top-6 left-6 px-4 py-2 rounded-xl bg-brand-500 text-white font-bold text-lg"
             >
-              Est. 2018
+              Est. 2020
             </motion.div>
           </motion.div>
 
@@ -64,32 +64,33 @@ export function AboutStory() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <span className="inline-block px-4 py-1.5 rounded-full bg-brand-500/10 text-brand-400 text-sm font-medium mb-4">
-              Our Story
-            </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-              From a Small Team to a{" "}
-              <span className="text-brand-500">Global Agency</span>
+              The Problem We Solve
             </h2>
 
             <div className="space-y-4 text-foreground-muted mb-8">
               <p>
-                Qwik Multi Services was born in 2018 from a simple idea: that African 
-                businesses deserve world-class digital solutions. Our founder, Oluwaseun 
-                Adeyemi, started the company in a small Lagos office with just two other 
-                passionate developers.
+                In today's fast-paced digital world, the pressure to create a
+                professional online presence is higher than ever. However, many
+                businesses and individuals struggle with the time, expertise,
+                and resources required to design and develop websites and
+                graphics that truly represent their brand. Custom design and
+                development can be expensive, time-consuming, and often
+                inaccessible to small businesses, startups, and freelancers.
               </p>
               <p>
-                What began as a web development agency quickly evolved into a full-service 
-                digital partner. We recognized that our clients needed more than just 
-                websites—they needed comprehensive digital strategies, beautiful designs, 
-                and reliable technology infrastructure.
+                This is where we come in. We understand the challenges you
+                face—whether it's limited design skills, tight deadlines, or
+                budget constraints—and we are here to bridge that gap. Our
+                comprehensive library of website templates and graphic assets
+                are designed to make high-quality design accessible to everyone.
+                We provide you with the tools to build a beautiful, functional
+                website or create eye-catching graphics without the need for a
+                large budget or advanced technical skills.
               </p>
               <p>
-                Today, we're proud to serve clients across 12+ countries, with a diverse 
-                team of 50+ talented professionals. But no matter how much we grow, we 
-                never forget our roots: delivering exceptional value with speed, quality, 
-                and a personal touch.
+                We believe that every business deserves a professional online
+                presence, and we are committed to helping you achieve that.
               </p>
             </div>
 
@@ -97,8 +98,9 @@ export function AboutStory() {
             <div className="relative p-6 rounded-2xl bg-background border border-border">
               <Quote className="absolute top-4 left-4 w-8 h-8 text-brand-500/20" />
               <blockquote className="text-lg text-foreground italic pl-8">
-                "We don't just build software—we build partnerships. Every project 
-                is an opportunity to make a real difference in our clients' businesses."
+                "We don't just build software—we build partnerships. Every
+                project is an opportunity to make a real difference in our
+                clients' businesses."
               </blockquote>
               <div className="flex items-center gap-3 mt-4 pl-8">
                 <div className="w-10 h-10 rounded-full overflow-hidden">
@@ -111,7 +113,9 @@ export function AboutStory() {
                   />
                 </div>
                 <div>
-                  <p className="font-semibold text-foreground text-sm">Christian Kayan</p>
+                  <p className="font-semibold text-foreground text-sm">
+                    Christian Kayan
+                  </p>
                   <p className="text-xs text-foreground-muted">Founder & CEO</p>
                 </div>
               </div>

@@ -100,7 +100,7 @@ export function AboutCTA() {
           viewport={{ once: true }}
           className="mt-16 text-center"
         >
-          <div className="inline-flex items-center gap-8 p-6 rounded-2xl bg-background-secondary border border-border">
+          {/* <div className="inline-flex items-center gap-8 p-6 rounded-2xl bg-background-secondary border border-border">
             <div className="flex items-center gap-2">
               <Users className="w-5 h-5 text-brand-500" />
               <span className="text-foreground-muted">
@@ -119,7 +119,7 @@ export function AboutCTA() {
                 <span className="font-bold text-foreground">12+</span> countries served
               </span>
             </div>
-          </div>
+          </div> */}
         </motion.div>
       </div>
     </section>

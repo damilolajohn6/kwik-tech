@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import { ContactHero } from "@/components/contact/contact-hero";
 import { ContactForm } from "@/components/contact/contact-form";
-import { ContactInfo } from "@/components/contact/contact-info";
+import { ContactInfo } from "@/components/contact";
 import { ContactMap } from "@/components/contact/contact-map";
 import { ContactFAQ } from "@/components/contact/contact-faq";
 

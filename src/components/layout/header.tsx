@@ -2,19 +2,28 @@
 
 import * as React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { useTheme } from "next-themes";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Zap } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "./theme-toggle";
 import { cn } from "@/lib/utils";
-import { NAV_LINKS } from "@/lib/constants";
+import { NAV_LINKS, SITE_CONFIG } from "@/lib/constants";
 import { useMobileMenuStore, useUIStore } from "@/store";
 
 export function Header() {
   const pathname = usePathname();
+  const { theme, resolvedTheme } = useTheme();
   const { isOpen, toggle, close } = useMobileMenuStore();
   const { isScrolled, setIsScrolled } = useUIStore();
+  const [mounted, setMounted] = React.useState(false);
+
+  // Prevent hydration mismatch
+  React.useEffect(() => {
+    setMounted(true);
+  }, []);
 
   React.useEffect(() => {
     const handleScroll = () => {
@@ -42,6 +51,14 @@ export function Header() {
     };
   }, [isOpen]);
 
+  const logoSrc = React.useMemo(() => {
+    if (!mounted) return "/qwik-logo.png";
+    const currentTheme = resolvedTheme || theme;
+    return currentTheme === "dark" 
+      ? "/qwik-logo.png"
+      : "/qwik-logo.png";
+  }, [mounted, theme, resolvedTheme]);
+
   return (
     <>
       <header
@@ -57,10 +74,31 @@ export function Header() {
             {/* Logo */}
             <Link
               href="/"
-              className="flex items-center gap-2 text-xl font-bold text-foreground hover:text-brand-500 transition-colors"
+              className="flex items-center gap-2 text-xl font-bold text-foreground hover:opacity-80 transition-opacity"
             >
-              <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-brand-500">
-                <Zap className="w-6 h-6 text-white" />
+              {/* Logo Image with theme support */}
+              <div className="relative w-10 h-10 md:w-12 md:h-12 flex-shrink-0">
+                {/* Show both logos and hide based on theme for smooth transition */}
+                <Image
+                  src={logoSrc}
+                  alt={SITE_CONFIG.name}
+                  fill
+                  className={cn(
+                    "object-contain transition-opacity duration-300",
+                    mounted && resolvedTheme === "dark" ? "opacity-0" : "opacity-100"
+                  )}
+                  priority
+                />
+                <Image
+                  src={logoSrc}
+                  alt={SITE_CONFIG.name}
+                  fill
+                  className={cn(
+                    "object-contain transition-opacity duration-300",
+                    mounted && resolvedTheme === "dark" ? "opacity-100" : "opacity-0"
+                  )}
+                  priority
+                />
               </div>
               <span className="hidden sm:block">Qwik Multi</span>
             </Link>
@@ -122,6 +160,33 @@ export function Header() {
               transition={{ duration: 0.3, delay: 0.1 }}
               className="flex flex-col items-center justify-center h-full gap-6"
             >
+              {/* Mobile Menu Logo */}
+              <motion.div
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 0.3 }}
+                className="relative w-20 h-20 mb-4"
+              >
+                <Image
+                  src="/qwik-logo.png"
+                  alt={SITE_CONFIG.name}
+                  fill
+                  className={cn(
+                    "object-contain transition-opacity duration-300",
+                    mounted && resolvedTheme === "dark" ? "opacity-0" : "opacity-100"
+                  )}
+                />
+                <Image
+                  src="/qwik-logo.png"
+                  alt={SITE_CONFIG.name}
+                  fill
+                  className={cn(
+                    "object-contain transition-opacity duration-300",
+                    mounted && resolvedTheme === "dark" ? "opacity-100" : "opacity-0"
+                  )}
+                />
+              </motion.div>
+
               {NAV_LINKS.map((link, index) => (
                 <motion.div
                   key={link.href}

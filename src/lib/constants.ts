@@ -19,6 +19,14 @@ export const SITE_CONFIG = {
   ],
 } as const;
 
+export const LOGO_CONFIG = {
+  default: "/qwik-logo.png",
+  light: "/qwik-logo.png",
+  dark: "/qwik-logo.png",
+  width: 48,
+  height: 48,
+} as const;
+
 export const CONTACT_INFO = {
   email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "hello@qwikmultiservices.com",
   phone: process.env.NEXT_PUBLIC_CONTACT_PHONE || "+2348141646357",
@@ -467,28 +475,28 @@ export const TEAM_MEMBERS = [
 export const TESTIMONIALS = [
   {
     id: 1,
-    name: "Sarah Chen",
-    role: "CTO",
-    company: "TechVenture Inc.",
+    name: "Tunde A",
+    role: "Operations Manager",
+    company: "NaijaGo Logistics",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80",
     content:
-      "Qwik Multi Services delivered our platform 2 weeks ahead of schedule. Their attention to detail and technical expertise is exceptional. Highly recommended!",
+      "Working with Qwik Multi Services was a game-changer for our delivery business. The platform they built is fast, easy to use, and helped us cut customer service calls in half. Clients now track their orders without stress. It's exactly what we needed",
     rating: 5,
   },
   {
     id: 2,
-    name: "Michael Obi",
-    role: "Founder",
-    company: "AgriGrow Nigeria",
+    name: "Amaka B",
+    role: "Creative Director",
+    company: "House of Elora",
     image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=200&q=80",
     content:
-      "They transformed our agricultural business with a custom mobile app. Our farmers can now track yields and access market prices in real-time.",
+      "Their innovative solutions and attention to detail helped our fashion brand grow exponentially. From product pages to checkout, everything just works. Exceptional service!",
     rating: 5,
   },
   {
     id: 3,
-    name: "Elena Rodriguez",
-    role: "Marketing Director",
+    name: "Chinedu O",
+    role: "Founder",
     company: "Global Retail Co.",
     image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&q=80",
     content:
@@ -497,12 +505,12 @@ export const TESTIMONIALS = [
   },
   {
     id: 4,
-    name: "David Okafor",
-    role: "CEO",
-    company: "HealthFirst Clinics",
+    name: "Ngozi A",
+    role: "Founder",
+    company: "LuxeSpaces Interiors",
     image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80",
     content:
-      "The telemedicine platform they built for us has helped us reach patients across Nigeria. Their team understood our needs perfectly.",
+      "Qwik Multi Services exceeded our expectations. Their team delivered a website that not only met but exceeded our needs perfectly.",
     rating: 5,
   },
 ] as const;
@@ -2100,8 +2108,8 @@ export const CONTACT_METHODS = [
     id: "location",
     title: "Visit Us",
     description: "Come say hello",
-    value: "123 Victoria Island, Lagos, Nigeria",
-    href: "https://maps.google.com/?q=Victoria+Island+Lagos",
+    value: "B96 Sahara Estate, Gwarimpa, Abuja, Nigeria",
+    href: "https://maps.google.com/?q=B96+Sahara+Estate+Gwarimpa+Abuja+Nigeria",
     icon: "MapPin",
     color: "bg-cyan-500/10 text-cyan-500",
   },

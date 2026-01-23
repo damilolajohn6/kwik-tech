@@ -1,8 +1,8 @@
 import { Metadata } from "next";
-import { ServicesHero } from "@/components/services/services-hero";
-import { ServicesGrid } from "@/components/services/services-grid";
-import { ServicesProcess } from "@/components/services/services-process";
-import { ServicesCTA } from "@/components/services/services-cta";
+import { ServicesHero } from "@/components/services";
+import { ServicesGrid } from "@/components/services";
+import { ServicesProcess } from "@/components/services";
+import { ServicesCTA } from "@/components/services";
 
 export const metadata: Metadata = {
   title: "Our Services | Digital Solutions That Drive Growth",
