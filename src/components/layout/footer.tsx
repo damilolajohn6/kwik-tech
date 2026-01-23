@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import {
-  Zap,
   Mail,
   Phone,
   MapPin,
@@ -10,17 +10,12 @@ import {
   Linkedin,
   Instagram,
   Github,
-  ArrowUpRight,
 } from "lucide-react";
 import * as React from "react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Separator } from "@/components/ui/separator";
 import {
   SITE_CONFIG,
   CONTACT_INFO,
   SOCIAL_LINKS,
-  NAV_LINKS,
   SERVICES,
 } from "@/lib/constants";
 import { NewsletterForm } from "@/components/contact/newsletter-form";
@@ -50,7 +45,7 @@ const footerLinks = {
 };
 
 export function Footer() {
-  const [year, setYear] = React.useState<number | null>(null); // Fixed hydration mismatch
+  const [year, setYear] = React.useState<number | null>(null);
 
   React.useEffect(() => {
     setYear(new Date().getFullYear());
@@ -63,12 +58,18 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 lg:gap-12">
           {/* Brand & Newsletter */}
           <div className="lg:col-span-2 space-y-6">
-            <Link href="/" className="flex items-center gap-2">
-              <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-brand-500">
-                <Zap className="w-6 h-6 text-white" />
+            <Link href="/" className="flex items-center gap-3">
+              {/* Single Logo Image */}
+              <div className="relative w-10 h-10 md:w-12 md:h-12 flex-shrink-0">
+                <Image
+                  src="/qwik-logo.png"
+                  alt={SITE_CONFIG.name}
+                  fill
+                  className="object-contain"
+                />
               </div>
               <span className="text-xl font-bold text-foreground">
-                Qwik Multi
+                Qwik Multi Services
               </span>
             </Link>
             <p className="text-foreground-muted text-sm max-w-xs">
@@ -213,9 +214,20 @@ export function Footer() {
       <div className="border-t border-border">
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-sm text-foreground-muted">
-              © {year} {SITE_CONFIG.name}. All rights reserved.
-            </p>
+            <div className="flex items-center gap-2">
+              {/* Small logo in bottom bar */}
+              <div className="relative w-6 h-6 flex-shrink-0">
+                <Image
+                  src="/qwik-logo.png"
+                  alt={SITE_CONFIG.name}
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <p className="text-sm text-foreground-muted">
+                © {year} {SITE_CONFIG.name}. All rights reserved.
+              </p>
+            </div>
             <div className="flex items-center gap-6">
               {footerLinks.legal.map((link) => (
                 <Link

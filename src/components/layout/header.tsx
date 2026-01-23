@@ -100,7 +100,7 @@ export function Header() {
                   priority
                 />
               </div>
-              <span className="hidden sm:block">Qwik Multi</span>
+              <span className="hidden sm:block">Qwik Multi Services</span>
             </Link>
 
             {/* Desktop Navigation */}
