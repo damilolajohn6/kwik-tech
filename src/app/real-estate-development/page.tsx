@@ -9,7 +9,7 @@ import { RealEstateTestimonials } from "@/components/real-estate/testimonials";
 import { RealEstateStats } from "@/components/real-estate/stats";
 import { RealEstateFAQ } from "@/components/real-estate/faq";
 import { RealEstateCTA } from "@/components/real-estate/cta";
-import { RealEstatePartners } from "@/components/real-estate/partners";
+// import { RealEstatePartners } from "@/components/real-estate/partners";
 
 export const metadata: Metadata = {
   title: "Real Estate & Property Development | Qwik Multi Services",
@@ -37,8 +37,8 @@ export default function RealEstatePage() {
       <RealEstateFeatures />
       <RealEstateProcess />
       <PropertyPortfolio />
-      <RealEstateTestimonials />
-      <RealEstatePartners />
+      {/* <RealEstateTestimonials /> */}
+      {/* <RealEstatePartners /> */}
       <RealEstateFAQ />
       <RealEstateCTA />
     </main>
