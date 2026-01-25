@@ -7,7 +7,11 @@ import { Sparkles, MapPin, Users, Calendar } from "lucide-react";
 import { COMPANY_INFO } from "@/lib/constants";
 
 const stats = [
-  { icon: Calendar, value: `Since ${COMPANY_INFO.founded}`, label: "Established" },
+  {
+    icon: Calendar,
+    value: `Since ${COMPANY_INFO.founded}`,
+    label: "Established",
+  },
   { icon: Users, value: COMPANY_INFO.employees, label: "Team Members" },
   { icon: MapPin, value: COMPANY_INFO.headquarters, label: "Headquarters" },
 ];
@@ -75,8 +79,8 @@ export function AboutHero() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight mb-6"
           >
-            We're Building the{" "}
-            <span className="text-brand-500">Future</span> of Digital
+            We're Building the <span className="text-brand-500">Future</span> of
+            Digital
           </motion.h1>
 
           {/* Description */}
@@ -86,8 +90,8 @@ export function AboutHero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg sm:text-xl text-foreground-muted max-w-2xl mx-auto mb-12"
           >
-            A passionate team of designers, developers, and strategists dedicated 
-            to helping businesses succeed in the digital world.
+            A passionate team of designers, developers, and strategists
+            dedicated to helping businesses succeed in the digital world.
           </motion.p>
 
           {/* Stats */}
@@ -103,9 +107,13 @@ export function AboutHero() {
                 <div key={stat.label} className="text-center">
                   <div className="flex items-center justify-center gap-2 text-brand-500 mb-2">
                     <Icon className="w-5 h-5" />
-                    <span className="text-2xl md:text-3xl font-bold">{stat.value}</span>
+                    <span className="text-2xl md:text-3xl font-bold">
+                      {stat.value}
+                    </span>
                   </div>
-                  <span className="text-sm text-foreground-muted">{stat.label}</span>
+                  <span className="text-sm text-foreground-muted">
+                    {stat.label}
+                  </span>
                 </div>
               );
             })}
@@ -121,17 +129,20 @@ export function AboutHero() {
         >
           <div className="relative aspect-[21/9] rounded-3xl overflow-hidden border border-border shadow-2xl">
             <Image
-              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1600&q=80"
+              // src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1600&q=80"
+              src="./images/kayan1.jpg"
               alt="Our team at work"
               fill
               className="object-cover"
               priority
             />
             <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
-            
+
             {/* Floating Label */}
             <div className="absolute bottom-6 left-6 px-4 py-2 rounded-full bg-background/80 backdrop-blur-sm border border-border">
-              <span className="text-sm font-medium text-foreground">Our Abuja Headquarters</span>
+              <span className="text-sm font-medium text-foreground">
+                Our Abuja Headquarters
+              </span>
             </div>
           </div>
         </motion.div>
