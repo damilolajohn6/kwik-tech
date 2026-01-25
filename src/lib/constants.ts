@@ -245,7 +245,7 @@ export const SERVICES = [
   {
     id: 8,
     slug: "real-estate-technology",
-    title: "Real Estate Development and Property MAnagement",
+    title: "Real Estate Development and Property Management",
     shortDescription:
       "PropTech solutions revolutionizing property management, sales, and real estate operations.",
     description:
