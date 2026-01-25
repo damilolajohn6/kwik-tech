@@ -76,7 +76,7 @@ export function FeaturedProperties() {
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                
+
                 {/* Status Badge */}
                 <div className="absolute top-4 left-4">
                   <Badge
@@ -85,7 +85,7 @@ export function FeaturedProperties() {
                       "text-white border-0",
                       property.status === "Completed" && "bg-green-600",
                       property.status === "In Progress" && "bg-amber-600",
-                      property.status === "For Sale" && "bg-brand-500"
+                      property.status === "For Sale" && "bg-brand-500",
                     )}
                   >
                     {property.status}
@@ -94,7 +94,10 @@ export function FeaturedProperties() {
 
                 {/* Type Badge */}
                 <div className="absolute top-4 right-4">
-                  <Badge variant="secondary" className="bg-background/90 text-foreground">
+                  <Badge
+                    variant="secondary"
+                    className="bg-background/90 text-foreground"
+                  >
                     {property.type}
                   </Badge>
                 </div>
@@ -122,12 +125,10 @@ export function FeaturedProperties() {
                     {property.location}
                   </p>
                 </div>
-
                 {/* Description */}
                 <p className="text-foreground-muted text-sm line-clamp-2">
                   {property.description}
                 </p>
-
                 {/* Features */}
                 <div className="flex flex-wrap gap-2">
                   {property.features.slice(0, 3).map((feature) => (
@@ -144,7 +145,6 @@ export function FeaturedProperties() {
                     </span>
                   )}
                 </div>
-
                 {/* Price & Size */}
                 <div className="flex items-center justify-between pt-4 border-t border-border">
                   <div>
@@ -160,10 +160,9 @@ export function FeaturedProperties() {
                     </p>
                   </div>
                 </div>
-
                 {/* CTA */}
                 <Button asChild className="w-full">
-                  <Link href={`/properties/${property.id}`}>
+                  <Link href={`/properties/${property.slug}`}>
                     View Details
                     <ArrowRight className="ml-2 w-4 h-4" />
                   </Link>
