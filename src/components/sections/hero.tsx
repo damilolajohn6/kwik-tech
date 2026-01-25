@@ -184,9 +184,9 @@ export function Hero() {
                       />
                     ))}
                   </div>
-                  <span className="text-sm text-foreground-muted">
+                  {/* <span className="text-sm text-foreground-muted">
                     5.0 on Clutch
-                  </span>
+                  </span> */}
                 </div>
               </div>
             </motion.div>
