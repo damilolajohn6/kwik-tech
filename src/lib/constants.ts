@@ -28,11 +28,11 @@ export const LOGO_CONFIG = {
 } as const;
 
 export const CONTACT_INFO = {
-  email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "hello@qwikmultiservices.com",
+  email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "contact@qwikmultiservices.com",
   phone: process.env.NEXT_PUBLIC_CONTACT_PHONE || "+2348141646357",
   whatsapp: process.env.NEXT_PUBLIC_WHATSAPP || "+2348141646357",
   address:
-    process.env.NEXT_PUBLIC_ADDRESS || "B96 Sahara Estate, Gwarimpa,, Abuja, Nigeria",
+    process.env.NEXT_PUBLIC_ADDRESS || "B96 Sahara Home Security Estate, Gwarimpa,, Abuja, FCT Nigeria",
 } as const;
 
 export const SOCIAL_LINKS = {
@@ -51,9 +51,9 @@ export const NAV_LINKS = [
   { href: "/about", label: "About" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
+  { href: "/real-estate-development", label: "Real Estate Development" },
 ] as const;
 
-// Hero section images
 export const HERO_IMAGES = {
   main: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=1920&q=80",
   secondary: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
@@ -134,118 +134,118 @@ export const SERVICES = [
       "Mailchimp",
     ],
   },
-  {
-    id: 4,
-    slug: "cloud-solutions-devops",
-    title: "Cloud Solutions & DevOps",
-    shortDescription:
-      "Scalable cloud infrastructure and automated deployment pipelines.",
-    description:
-      "We design and implement robust cloud architectures on AWS, Azure, and GCP. Our DevOps practices ensure continuous integration, delivery, and monitoring.",
-    icon: "Cloud",
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80",
-    features: [
-      "Cloud Architecture Design",
-      "Infrastructure as Code",
-      "CI/CD Pipelines",
-      "Container Orchestration",
-      "Monitoring & Logging",
-      "Security & Compliance",
-    ],
-    technologies: [
-      "AWS",
-      "Azure",
-      "GCP",
-      "Docker",
-      "Kubernetes",
-      "Terraform",
-    ],
-  },
-  {
-    id: 5,
-    slug: "ai-machine-learning",
-    title: "AI & Machine Learning",
-    shortDescription:
-      "Intelligent solutions powered by artificial intelligence and ML.",
-    description:
-      "We integrate AI and machine learning capabilities into your applications. From chatbots to predictive analytics, we help you leverage the power of AI.",
-    icon: "Brain",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80",
-    features: [
-      "Custom AI Solutions",
-      "Machine Learning Models",
-      "Natural Language Processing",
-      "Computer Vision",
-      "Predictive Analytics",
-      "AI Chatbots",
-    ],
-    technologies: [
-      "Python",
-      "TensorFlow",
-      "PyTorch",
-      "OpenAI",
-      "LangChain",
-      "Hugging Face",
-    ],
-  },
-  {
-    id: 6,
-    slug: "ecommerce-solutions",
-    title: "E-commerce & Custom Software",
-    shortDescription:
-      "End-to-end e-commerce platforms and custom software solutions.",
-    description:
-      "We build powerful e-commerce platforms and custom software solutions tailored to your business needs. From inventory management to payment processing, we've got you covered.",
-    icon: "ShoppingCart",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80",
-    features: [
-      "Custom E-commerce Platforms",
-      "Shopify Development",
-      "Payment Integration",
-      "Inventory Management",
-      "Order Management Systems",
-      "Custom CRM/ERP Solutions",
-    ],
-    technologies: [
-      "Shopify",
-      "WooCommerce",
-      "Stripe",
-      "Prisma",
-      "PostgreSQL",
-      "Redis",
-    ],
-  },
-  {
-    id: 7,
-    slug: "technology-solutions",
-    title: "Technology Solutions & Consulting",
-    shortDescription:
-      "Comprehensive technology solutions to modernize and transform your business operations.",
-    description:
-      "We provide end-to-end technology solutions including IT consulting, system integration, cybersecurity, and digital transformation services to help businesses stay competitive in the digital age.",
-    icon: "Cpu",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80",
-    features: [
-      "IT Strategy & Consulting",
-      "System Integration",
-      "Cybersecurity Solutions",
-      "Digital Transformation",
-      "Legacy System Modernization",
-      "Enterprise Software Solutions",
-    ],
-    technologies: [
-      "Enterprise Architecture",
-      "Microservices",
-      "API Gateway",
-      "Zero Trust Security",
-      "ServiceNow",
-      "Salesforce",
-    ],
-  },
+  // {
+  //   id: 4,
+  //   slug: "cloud-solutions-devops",
+  //   title: "Cloud Solutions & DevOps",
+  //   shortDescription:
+  //     "Scalable cloud infrastructure and automated deployment pipelines.",
+  //   description:
+  //     "We design and implement robust cloud architectures on AWS, Azure, and GCP. Our DevOps practices ensure continuous integration, delivery, and monitoring.",
+  //   icon: "Cloud",
+  //   image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80",
+  //   features: [
+  //     "Cloud Architecture Design",
+  //     "Infrastructure as Code",
+  //     "CI/CD Pipelines",
+  //     "Container Orchestration",
+  //     "Monitoring & Logging",
+  //     "Security & Compliance",
+  //   ],
+  //   technologies: [
+  //     "AWS",
+  //     "Azure",
+  //     "GCP",
+  //     "Docker",
+  //     "Kubernetes",
+  //     "Terraform",
+  //   ],
+  // },
+  // {
+  //   id: 5,
+  //   slug: "ai-machine-learning",
+  //   title: "AI & Machine Learning",
+  //   shortDescription:
+  //     "Intelligent solutions powered by artificial intelligence and ML.",
+  //   description:
+  //     "We integrate AI and machine learning capabilities into your applications. From chatbots to predictive analytics, we help you leverage the power of AI.",
+  //   icon: "Brain",
+  //   image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80",
+  //   features: [
+  //     "Custom AI Solutions",
+  //     "Machine Learning Models",
+  //     "Natural Language Processing",
+  //     "Computer Vision",
+  //     "Predictive Analytics",
+  //     "AI Chatbots",
+  //   ],
+  //   technologies: [
+  //     "Python",
+  //     "TensorFlow",
+  //     "PyTorch",
+  //     "OpenAI",
+  //     "LangChain",
+  //     "Hugging Face",
+  //   ],
+  // },
+  // {
+  //   id: 6,
+  //   slug: "ecommerce-solutions",
+  //   title: "E-commerce & Custom Software",
+  //   shortDescription:
+  //     "End-to-end e-commerce platforms and custom software solutions.",
+  //   description:
+  //     "We build powerful e-commerce platforms and custom software solutions tailored to your business needs. From inventory management to payment processing, we've got you covered.",
+  //   icon: "ShoppingCart",
+  //   image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80",
+  //   features: [
+  //     "Custom E-commerce Platforms",
+  //     "Shopify Development",
+  //     "Payment Integration",
+  //     "Inventory Management",
+  //     "Order Management Systems",
+  //     "Custom CRM/ERP Solutions",
+  //   ],
+  //   technologies: [
+  //     "Shopify",
+  //     "WooCommerce",
+  //     "Stripe",
+  //     "Prisma",
+  //     "PostgreSQL",
+  //     "Redis",
+  //   ],
+  // },
+  // {
+  //   id: 7,
+  //   slug: "technology-solutions",
+  //   title: "Technology Solutions & Consulting",
+  //   shortDescription:
+  //     "Comprehensive technology solutions to modernize and transform your business operations.",
+  //   description:
+  //     "We provide end-to-end technology solutions including IT consulting, system integration, cybersecurity, and digital transformation services to help businesses stay competitive in the digital age.",
+  //   icon: "Cpu",
+  //   image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80",
+  //   features: [
+  //     "IT Strategy & Consulting",
+  //     "System Integration",
+  //     "Cybersecurity Solutions",
+  //     "Digital Transformation",
+  //     "Legacy System Modernization",
+  //     "Enterprise Software Solutions",
+  //   ],
+  //   technologies: [
+  //     "Enterprise Architecture",
+  //     "Microservices",
+  //     "API Gateway",
+  //     "Zero Trust Security",
+  //     "ServiceNow",
+  //     "Salesforce",
+  //   ],
+  // },
   {
     id: 8,
     slug: "real-estate-technology",
-    title: "Real Estate Technology Solutions",
+    title: "Real Estate Development and Property MAnagement",
     shortDescription:
       "PropTech solutions revolutionizing property management, sales, and real estate operations.",
     description:
@@ -657,19 +657,18 @@ export const FAQS = [
   
 ] as const;
 
-// Add these to your existing constants.ts file
 
 export const SERVICE_CATEGORIES = [
   { id: "all", label: "All Services" },
   { id: "development", label: "Development" },
   { id: "design", label: "Design" },
   { id: "marketing", label: "Marketing" },
-  { id: "cloud", label: "Cloud & DevOps" },
-  { id: "ai", label: "AI & ML" },
-  { id: "ecommerce", label: "E-commerce" },
-  { id: "technology", label: "Technology Solutions" },
-  { id: "realestate", label: "Real Estate Tech" },
-  { id: "agritech", label: "Agricultural Tech" },
+  // { id: "cloud", label: "Cloud & DevOps" },
+  // { id: "ai", label: "AI & ML" },
+  // { id: "ecommerce", label: "E-commerce" },
+  // { id: "technology", label: "Technology Solutions" },
+  { id: "realestate", label: "Real Estate Development and Property Management" },
+  { id: "agritech", label: "Agricultural Technology" },
   { id: "healthtech", label: "Health Technology" },
 ] as const;
 
@@ -968,424 +967,424 @@ We take a data-driven approach to marketing, using analytics and insights to con
       },
     ],
   },
-  {
-    id: 4,
-    slug: "cloud-solutions-devops",
-    title: "Cloud Solutions & DevOps",
-    shortDescription: "Scalable cloud infrastructure and automated deployment pipelines.",
-    description: "We design and implement robust cloud architectures on AWS, Azure, and GCP. Our DevOps practices ensure continuous integration, delivery, and monitoring for reliable, scalable systems.",
-    longDescription: `Modern applications require modern infrastructure. Our cloud and DevOps services help businesses build, deploy, and scale their applications with confidence. We design cloud architectures that are secure, cost-effective, and built for growth.
+//   {
+//     id: 4,
+//     slug: "cloud-solutions-devops",
+//     title: "Cloud Solutions & DevOps",
+//     shortDescription: "Scalable cloud infrastructure and automated deployment pipelines.",
+//     description: "We design and implement robust cloud architectures on AWS, Azure, and GCP. Our DevOps practices ensure continuous integration, delivery, and monitoring for reliable, scalable systems.",
+//     longDescription: `Modern applications require modern infrastructure. Our cloud and DevOps services help businesses build, deploy, and scale their applications with confidence. We design cloud architectures that are secure, cost-effective, and built for growth.
 
-From initial cloud migration to ongoing optimization, we handle all aspects of your infrastructure. Our DevOps practices automate repetitive tasks, reduce deployment risks, and enable your team to ship features faster while maintaining high reliability.`,
-    icon: "Cloud",
-    category: "cloud",
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&q=80",
-    heroImage: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=1920&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80",
-      "https://images.unsplash.com/photo-1484417894907-623942c8ee29?w=800&q=80",
-      "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80",
-    ],
-    features: [
-      {
-        title: "Cloud Architecture Design",
-        description: "Scalable, secure architectures on AWS, Azure, or GCP tailored to your needs.",
-        icon: "Cloud",
-      },
-      {
-        title: "Infrastructure as Code",
-        description: "Reproducible infrastructure with Terraform, CloudFormation, or Pulumi.",
-        icon: "FileCode",
-      },
-      {
-        title: "CI/CD Pipelines",
-        description: "Automated testing and deployment pipelines for faster, safer releases.",
-        icon: "GitBranch",
-      },
-      {
-        title: "Container Orchestration",
-        description: "Docker and Kubernetes for scalable, portable containerized applications.",
-        icon: "Box",
-      },
-      {
-        title: "Monitoring & Logging",
-        description: "Comprehensive observability with real-time alerts and dashboards.",
-        icon: "Activity",
-      },
-      {
-        title: "Security & Compliance",
-        description: "Security best practices and compliance for GDPR, HIPAA, SOC2, and more.",
-        icon: "Shield",
-      },
-    ],
-    technologies: [
-      { name: "AWS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" },
-      { name: "Azure", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" },
-      { name: "GCP", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" },
-      { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
-      { name: "Kubernetes", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" },
-      { name: "Terraform", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" },
-    ],
-    benefits: [
-      "Reduced infrastructure costs",
-      "Faster deployment cycles",
-      "Improved system reliability",
-      "Enhanced security posture",
-    ],
-    caseStudies: [
-      {
-        title: "Cloud Migration",
-        description: "Migrated a legacy monolith to a microservices architecture on AWS.",
-        image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&q=80",
-        results: ["70% cost reduction", "99.99% uptime", "10x faster deployments"],
-      },
-      {
-        title: "DevOps Transformation",
-        description: "Implemented CI/CD and infrastructure as code for a fintech startup.",
-        image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&q=80",
-        results: ["Daily deployments", "90% fewer incidents", "50% faster development"],
-      },
-    ],
-    pricing: {
-      starting: "$4,000",
-      note: "Project-based or monthly retainer options available",
-    },
-    faqs: [
-      {
-        question: "Which cloud provider do you recommend?",
-        answer: "It depends on your specific needs, existing infrastructure, and budget. We'll assess your requirements and recommend the best fit—whether that's AWS, Azure, GCP, or a multi-cloud approach.",
-      },
-      {
-        question: "Can you help migrate our existing infrastructure?",
-        answer: "Yes! We specialize in cloud migrations. We'll assess your current setup, plan the migration, and execute it with minimal downtime.",
-      },
-      {
-        question: "Do you provide 24/7 support?",
-        answer: "Yes, we offer 24/7 monitoring and support packages to ensure your infrastructure runs smoothly around the clock.",
-      },
-    ],
-  },
-  {
-    id: 5,
-    slug: "ai-machine-learning",
-    title: "AI & Machine Learning",
-    shortDescription: "Intelligent solutions powered by artificial intelligence and ML.",
-    description: "We integrate AI and machine learning capabilities into your applications. From chatbots to predictive analytics, we help you leverage the power of AI to transform your business.",
-    longDescription: `Artificial Intelligence is no longer just for tech giants—it's accessible to businesses of all sizes. Our AI and machine learning services help you harness the power of intelligent systems to automate processes, gain insights, and create personalized experiences.
+// From initial cloud migration to ongoing optimization, we handle all aspects of your infrastructure. Our DevOps practices automate repetitive tasks, reduce deployment risks, and enable your team to ship features faster while maintaining high reliability.`,
+//     icon: "Cloud",
+//     category: "cloud",
+//     image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&q=80",
+//     heroImage: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=1920&q=80",
+//     gallery: [
+//       "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80",
+//       "https://images.unsplash.com/photo-1484417894907-623942c8ee29?w=800&q=80",
+//       "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80",
+//     ],
+//     features: [
+//       {
+//         title: "Cloud Architecture Design",
+//         description: "Scalable, secure architectures on AWS, Azure, or GCP tailored to your needs.",
+//         icon: "Cloud",
+//       },
+//       {
+//         title: "Infrastructure as Code",
+//         description: "Reproducible infrastructure with Terraform, CloudFormation, or Pulumi.",
+//         icon: "FileCode",
+//       },
+//       {
+//         title: "CI/CD Pipelines",
+//         description: "Automated testing and deployment pipelines for faster, safer releases.",
+//         icon: "GitBranch",
+//       },
+//       {
+//         title: "Container Orchestration",
+//         description: "Docker and Kubernetes for scalable, portable containerized applications.",
+//         icon: "Box",
+//       },
+//       {
+//         title: "Monitoring & Logging",
+//         description: "Comprehensive observability with real-time alerts and dashboards.",
+//         icon: "Activity",
+//       },
+//       {
+//         title: "Security & Compliance",
+//         description: "Security best practices and compliance for GDPR, HIPAA, SOC2, and more.",
+//         icon: "Shield",
+//       },
+//     ],
+//     technologies: [
+//       { name: "AWS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" },
+//       { name: "Azure", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" },
+//       { name: "GCP", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" },
+//       { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+//       { name: "Kubernetes", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" },
+//       { name: "Terraform", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" },
+//     ],
+//     benefits: [
+//       "Reduced infrastructure costs",
+//       "Faster deployment cycles",
+//       "Improved system reliability",
+//       "Enhanced security posture",
+//     ],
+//     caseStudies: [
+//       {
+//         title: "Cloud Migration",
+//         description: "Migrated a legacy monolith to a microservices architecture on AWS.",
+//         image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&q=80",
+//         results: ["70% cost reduction", "99.99% uptime", "10x faster deployments"],
+//       },
+//       {
+//         title: "DevOps Transformation",
+//         description: "Implemented CI/CD and infrastructure as code for a fintech startup.",
+//         image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&q=80",
+//         results: ["Daily deployments", "90% fewer incidents", "50% faster development"],
+//       },
+//     ],
+//     pricing: {
+//       starting: "$4,000",
+//       note: "Project-based or monthly retainer options available",
+//     },
+//     faqs: [
+//       {
+//         question: "Which cloud provider do you recommend?",
+//         answer: "It depends on your specific needs, existing infrastructure, and budget. We'll assess your requirements and recommend the best fit—whether that's AWS, Azure, GCP, or a multi-cloud approach.",
+//       },
+//       {
+//         question: "Can you help migrate our existing infrastructure?",
+//         answer: "Yes! We specialize in cloud migrations. We'll assess your current setup, plan the migration, and execute it with minimal downtime.",
+//       },
+//       {
+//         question: "Do you provide 24/7 support?",
+//         answer: "Yes, we offer 24/7 monitoring and support packages to ensure your infrastructure runs smoothly around the clock.",
+//       },
+//     ],
+//   },
+//   {
+//     id: 5,
+//     slug: "ai-machine-learning",
+//     title: "AI & Machine Learning",
+//     shortDescription: "Intelligent solutions powered by artificial intelligence and ML.",
+//     description: "We integrate AI and machine learning capabilities into your applications. From chatbots to predictive analytics, we help you leverage the power of AI to transform your business.",
+//     longDescription: `Artificial Intelligence is no longer just for tech giants—it's accessible to businesses of all sizes. Our AI and machine learning services help you harness the power of intelligent systems to automate processes, gain insights, and create personalized experiences.
 
-Whether you need a custom AI model, a conversational chatbot, or predictive analytics, our team has the expertise to deliver solutions that drive real business value. We work with the latest technologies including OpenAI, TensorFlow, and PyTorch to build AI systems that are accurate, scalable, and ethical.`,
-    icon: "Brain",
-    category: "ai",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&q=80",
-    heroImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1920&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=800&q=80",
-      "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=800&q=80",
-      "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80",
-    ],
-    features: [
-      {
-        title: "Custom AI Solutions",
-        description: "Bespoke AI models trained on your data for your specific use cases.",
-        icon: "Cpu",
-      },
-      {
-        title: "Machine Learning Models",
-        description: "Predictive models for forecasting, classification, and recommendations.",
-        icon: "TrendingUp",
-      },
-      {
-        title: "Natural Language Processing",
-        description: "Text analysis, sentiment detection, and language understanding.",
-        icon: "MessageSquare",
-      },
-      {
-        title: "Computer Vision",
-        description: "Image recognition, object detection, and visual analysis.",
-        icon: "Eye",
-      },
-      {
-        title: "Predictive Analytics",
-        description: "Data-driven predictions for business intelligence and decision making.",
-        icon: "LineChart",
-      },
-      {
-        title: "AI Chatbots",
-        description: "Intelligent conversational agents for customer support and engagement.",
-        icon: "Bot",
-      },
-    ],
-    technologies: [
-      { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
-      { name: "TensorFlow", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" },
-      { name: "PyTorch", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" },
-      { name: "OpenAI", icon: "https://www.vectorlogo.zone/logos/openai/openai-icon.svg" },
-      { name: "Jupyter", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" },
-      { name: "Pandas", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" },
-    ],
-    benefits: [
-      "Automated repetitive tasks",
-      "Data-driven decision making",
-      "Personalized customer experiences",
-      "Competitive advantage through innovation",
-    ],
-    caseStudies: [
-      {
-        title: "AI Customer Support",
-        description: "Built an AI chatbot handling 80% of customer inquiries automatically.",
-        image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=600&q=80",
-        results: ["80% inquiries automated", "24/7 availability", "60% cost reduction"],
-      },
-      {
-        title: "Predictive Maintenance",
-        description: "ML system predicting equipment failures for a manufacturing company.",
-        image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&q=80",
-        results: ["90% prediction accuracy", "50% fewer breakdowns", "$1M+ saved annually"],
-      },
-    ],
-    pricing: {
-      starting: "$10,000",
-      note: "AI projects vary significantly based on complexity and data requirements",
-    },
-    faqs: [
-      {
-        question: "Do we need our own data to get started?",
-        answer: "While having your own data is ideal, we can work with you to collect data, use transfer learning, or leverage pre-trained models depending on your use case.",
-      },
-      {
-        question: "How long does it take to build an AI solution?",
-        answer: "Simple AI integrations (like chatbots) can take 4-8 weeks. Custom ML models typically take 3-6 months including data preparation and training.",
-      },
-      {
-        question: "How do you ensure AI ethics and fairness?",
-        answer: "We follow AI ethics best practices, including bias testing, explainability, and transparency. We ensure your AI systems are fair and compliant with regulations.",
-      },
-    ],
-  },
-  {
-    id: 6,
-    slug: "ecommerce-solutions",
-    title: "E-commerce & Custom Software",
-    shortDescription: "End-to-end e-commerce platforms and custom software solutions.",
-    description: "We build powerful e-commerce platforms and custom software solutions tailored to your business needs. From inventory management to payment processing, we've got you covered.",
-    longDescription: `E-commerce success requires more than just an online store—it requires a seamless experience that converts visitors into loyal customers. Our e-commerce solutions are designed to maximize conversions, streamline operations, and scale with your business.
+// Whether you need a custom AI model, a conversational chatbot, or predictive analytics, our team has the expertise to deliver solutions that drive real business value. We work with the latest technologies including OpenAI, TensorFlow, and PyTorch to build AI systems that are accurate, scalable, and ethical.`,
+//     icon: "Brain",
+//     category: "ai",
+//     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&q=80",
+//     heroImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1920&q=80",
+//     gallery: [
+//       "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=800&q=80",
+//       "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=800&q=80",
+//       "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80",
+//     ],
+//     features: [
+//       {
+//         title: "Custom AI Solutions",
+//         description: "Bespoke AI models trained on your data for your specific use cases.",
+//         icon: "Cpu",
+//       },
+//       {
+//         title: "Machine Learning Models",
+//         description: "Predictive models for forecasting, classification, and recommendations.",
+//         icon: "TrendingUp",
+//       },
+//       {
+//         title: "Natural Language Processing",
+//         description: "Text analysis, sentiment detection, and language understanding.",
+//         icon: "MessageSquare",
+//       },
+//       {
+//         title: "Computer Vision",
+//         description: "Image recognition, object detection, and visual analysis.",
+//         icon: "Eye",
+//       },
+//       {
+//         title: "Predictive Analytics",
+//         description: "Data-driven predictions for business intelligence and decision making.",
+//         icon: "LineChart",
+//       },
+//       {
+//         title: "AI Chatbots",
+//         description: "Intelligent conversational agents for customer support and engagement.",
+//         icon: "Bot",
+//       },
+//     ],
+//     technologies: [
+//       { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+//       { name: "TensorFlow", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" },
+//       { name: "PyTorch", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" },
+//       { name: "OpenAI", icon: "https://www.vectorlogo.zone/logos/openai/openai-icon.svg" },
+//       { name: "Jupyter", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" },
+//       { name: "Pandas", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" },
+//     ],
+//     benefits: [
+//       "Automated repetitive tasks",
+//       "Data-driven decision making",
+//       "Personalized customer experiences",
+//       "Competitive advantage through innovation",
+//     ],
+//     caseStudies: [
+//       {
+//         title: "AI Customer Support",
+//         description: "Built an AI chatbot handling 80% of customer inquiries automatically.",
+//         image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=600&q=80",
+//         results: ["80% inquiries automated", "24/7 availability", "60% cost reduction"],
+//       },
+//       {
+//         title: "Predictive Maintenance",
+//         description: "ML system predicting equipment failures for a manufacturing company.",
+//         image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&q=80",
+//         results: ["90% prediction accuracy", "50% fewer breakdowns", "$1M+ saved annually"],
+//       },
+//     ],
+//     pricing: {
+//       starting: "$10,000",
+//       note: "AI projects vary significantly based on complexity and data requirements",
+//     },
+//     faqs: [
+//       {
+//         question: "Do we need our own data to get started?",
+//         answer: "While having your own data is ideal, we can work with you to collect data, use transfer learning, or leverage pre-trained models depending on your use case.",
+//       },
+//       {
+//         question: "How long does it take to build an AI solution?",
+//         answer: "Simple AI integrations (like chatbots) can take 4-8 weeks. Custom ML models typically take 3-6 months including data preparation and training.",
+//       },
+//       {
+//         question: "How do you ensure AI ethics and fairness?",
+//         answer: "We follow AI ethics best practices, including bias testing, explainability, and transparency. We ensure your AI systems are fair and compliant with regulations.",
+//       },
+//     ],
+//   },
+//   {
+//     id: 6,
+//     slug: "ecommerce-solutions",
+//     title: "E-commerce & Custom Software",
+//     shortDescription: "End-to-end e-commerce platforms and custom software solutions.",
+//     description: "We build powerful e-commerce platforms and custom software solutions tailored to your business needs. From inventory management to payment processing, we've got you covered.",
+//     longDescription: `E-commerce success requires more than just an online store—it requires a seamless experience that converts visitors into loyal customers. Our e-commerce solutions are designed to maximize conversions, streamline operations, and scale with your business.
 
-Beyond e-commerce, we build custom software solutions for unique business challenges. Whether you need an inventory management system, a CRM, or a completely custom application, our team can design and build software that perfectly fits your workflow.`,
-    icon: "ShoppingCart",
-    category: "ecommerce",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
-    heroImage: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=1920&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&q=80",
-      "https://images.unsplash.com/photo-1556742111-a301076d9d18?w=800&q=80",
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
-    ],
-    features: [
-      {
-        title: "Custom E-commerce Platforms",
-        description: "Bespoke online stores built for performance, scalability, and conversions.",
-        icon: "Store",
-      },
-      {
-        title: "Shopify Development",
-        description: "Custom Shopify themes, apps, and integrations for your online store.",
-        icon: "ShoppingBag",
-      },
-      {
-        title: "Payment Integration",
-        description: "Secure payment processing with Stripe, PayPal, Paystack, and more.",
-        icon: "CreditCard",
-      },
-      {
-        title: "Inventory Management",
-        description: "Real-time inventory tracking across multiple channels and locations.",
-        icon: "Package",
-      },
-      {
-        title: "Order Management Systems",
-        description: "Streamlined order processing, fulfillment, and tracking.",
-        icon: "ClipboardList",
-      },
-      {
-        title: "Custom CRM/ERP Solutions",
-        description: "Tailored business management systems for your unique workflows.",
-        icon: "Database",
-      },
-    ],
-    technologies: [
-      { name: "Shopify", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg" },
-      { name: "WooCommerce", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/woocommerce/woocommerce-original.svg" },
-      { name: "Stripe", icon: "https://www.vectorlogo.zone/logos/stripe/stripe-icon.svg" },
-      { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
-      { name: "Redis", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" },
-      { name: "GraphQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" },
-    ],
-    benefits: [
-      "Increased online sales and conversions",
-      "Streamlined business operations",
-      "Better customer experience",
-      "Scalable infrastructure for growth",
-    ],
-    caseStudies: [
-      {
-        title: "Fashion E-commerce Platform",
-        description: "Built a multi-vendor marketplace for African fashion brands.",
-        image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&q=80",
-        results: ["$5M+ GMV in year 1", "500+ vendors", "100K+ customers"],
-      },
-      {
-        title: "Custom Inventory System",
-        description: "Developed an inventory management system for a retail chain.",
-        image: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&q=80",
-        results: ["50% reduced stockouts", "30% lower carrying costs", "Real-time visibility"],
-      },
-    ],
-    pricing: {
-      starting: "$8,000",
-      note: "E-commerce and custom software projects vary based on features and complexity",
-    },
-    faqs: [
-      {
-        question: "Should I use Shopify or a custom platform?",
-        answer: "Shopify is great for getting started quickly with lower upfront costs. Custom platforms are better for unique requirements, complex integrations, or when you've outgrown Shopify's limitations.",
-      },
-      {
-        question: "Can you migrate my existing store?",
-        answer: "Yes! We handle migrations from any platform. We'll preserve your data, SEO rankings, and minimize downtime during the transition.",
-      },
-      {
-        question: "What payment methods can you integrate?",
-        answer: "We can integrate virtually any payment gateway including Stripe, PayPal, Paystack, Flutterwave, bank transfers, and more. We'll recommend the best options for your market.",
-      },
-    ],
-  },
-  {
-    id: 7,
-    slug: "technology-solutions",
-    title: "Technology Solutions & Consulting",
-    shortDescription: "Comprehensive technology solutions to modernize and transform your business operations.",
-    description: "We provide end-to-end technology solutions including IT consulting, system integration, cybersecurity, and digital transformation services to help businesses stay competitive in the rapidly evolving digital landscape.",
-    longDescription: `In today's fast-paced digital world, technology is not just a support function—it's a strategic differentiator. Our Technology Solutions & Consulting services help organizations navigate complex technology decisions, modernize legacy systems, and build robust digital foundations for sustainable growth.
+// Beyond e-commerce, we build custom software solutions for unique business challenges. Whether you need an inventory management system, a CRM, or a completely custom application, our team can design and build software that perfectly fits your workflow.`,
+//     icon: "ShoppingCart",
+//     category: "ecommerce",
+//     image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+//     heroImage: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=1920&q=80",
+//     gallery: [
+//       "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&q=80",
+//       "https://images.unsplash.com/photo-1556742111-a301076d9d18?w=800&q=80",
+//       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
+//     ],
+//     features: [
+//       {
+//         title: "Custom E-commerce Platforms",
+//         description: "Bespoke online stores built for performance, scalability, and conversions.",
+//         icon: "Store",
+//       },
+//       {
+//         title: "Shopify Development",
+//         description: "Custom Shopify themes, apps, and integrations for your online store.",
+//         icon: "ShoppingBag",
+//       },
+//       {
+//         title: "Payment Integration",
+//         description: "Secure payment processing with Stripe, PayPal, Paystack, and more.",
+//         icon: "CreditCard",
+//       },
+//       {
+//         title: "Inventory Management",
+//         description: "Real-time inventory tracking across multiple channels and locations.",
+//         icon: "Package",
+//       },
+//       {
+//         title: "Order Management Systems",
+//         description: "Streamlined order processing, fulfillment, and tracking.",
+//         icon: "ClipboardList",
+//       },
+//       {
+//         title: "Custom CRM/ERP Solutions",
+//         description: "Tailored business management systems for your unique workflows.",
+//         icon: "Database",
+//       },
+//     ],
+//     technologies: [
+//       { name: "Shopify", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg" },
+//       { name: "WooCommerce", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/woocommerce/woocommerce-original.svg" },
+//       { name: "Stripe", icon: "https://www.vectorlogo.zone/logos/stripe/stripe-icon.svg" },
+//       { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
+//       { name: "Redis", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" },
+//       { name: "GraphQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" },
+//     ],
+//     benefits: [
+//       "Increased online sales and conversions",
+//       "Streamlined business operations",
+//       "Better customer experience",
+//       "Scalable infrastructure for growth",
+//     ],
+//     caseStudies: [
+//       {
+//         title: "Fashion E-commerce Platform",
+//         description: "Built a multi-vendor marketplace for African fashion brands.",
+//         image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&q=80",
+//         results: ["$5M+ GMV in year 1", "500+ vendors", "100K+ customers"],
+//       },
+//       {
+//         title: "Custom Inventory System",
+//         description: "Developed an inventory management system for a retail chain.",
+//         image: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&q=80",
+//         results: ["50% reduced stockouts", "30% lower carrying costs", "Real-time visibility"],
+//       },
+//     ],
+//     pricing: {
+//       starting: "$8,000",
+//       note: "E-commerce and custom software projects vary based on features and complexity",
+//     },
+//     faqs: [
+//       {
+//         question: "Should I use Shopify or a custom platform?",
+//         answer: "Shopify is great for getting started quickly with lower upfront costs. Custom platforms are better for unique requirements, complex integrations, or when you've outgrown Shopify's limitations.",
+//       },
+//       {
+//         question: "Can you migrate my existing store?",
+//         answer: "Yes! We handle migrations from any platform. We'll preserve your data, SEO rankings, and minimize downtime during the transition.",
+//       },
+//       {
+//         question: "What payment methods can you integrate?",
+//         answer: "We can integrate virtually any payment gateway including Stripe, PayPal, Paystack, Flutterwave, bank transfers, and more. We'll recommend the best options for your market.",
+//       },
+//     ],
+//   },
+//   {
+//     id: 7,
+//     slug: "technology-solutions",
+//     title: "Technology Solutions & Consulting",
+//     shortDescription: "Comprehensive technology solutions to modernize and transform your business operations.",
+//     description: "We provide end-to-end technology solutions including IT consulting, system integration, cybersecurity, and digital transformation services to help businesses stay competitive in the rapidly evolving digital landscape.",
+//     longDescription: `In today's fast-paced digital world, technology is not just a support function—it's a strategic differentiator. Our Technology Solutions & Consulting services help organizations navigate complex technology decisions, modernize legacy systems, and build robust digital foundations for sustainable growth.
 
-We bring together deep technical expertise with business acumen to deliver solutions that drive real value. Whether you're looking to optimize existing systems, implement new technologies, or completely transform your digital infrastructure, our team provides the guidance and hands-on support you need.
+// We bring together deep technical expertise with business acumen to deliver solutions that drive real value. Whether you're looking to optimize existing systems, implement new technologies, or completely transform your digital infrastructure, our team provides the guidance and hands-on support you need.
 
-Our approach combines strategic consulting with practical implementation, ensuring that technology investments align with business objectives and deliver measurable results. We work with organizations of all sizes, from startups to large enterprises, across various industries.`,
-    icon: "Cpu",
-    category: "technology",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&q=80",
-    heroImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1920&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?w=800&q=80",
-      "https://images.unsplash.com/photo-1573164713988-8665fc963095?w=800&q=80",
-      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80",
-    ],
-    features: [
-      {
-        title: "IT Strategy & Consulting",
-        description: "Strategic technology roadmaps aligned with your business goals and industry best practices.",
-        icon: "Compass",
-      },
-      {
-        title: "System Integration",
-        description: "Seamless integration of disparate systems, applications, and data sources for unified operations.",
-        icon: "Link",
-      },
-      {
-        title: "Cybersecurity Solutions",
-        description: "Comprehensive security assessments, implementation, and managed security services.",
-        icon: "Shield",
-      },
-      {
-        title: "Digital Transformation",
-        description: "End-to-end digital transformation initiatives that revolutionize business processes.",
-        icon: "Sparkles",
-      },
-      {
-        title: "Legacy System Modernization",
-        description: "Upgrade and modernize outdated systems while preserving critical business logic.",
-        icon: "RefreshCw",
-      },
-      {
-        title: "Enterprise Software Solutions",
-        description: "Custom enterprise applications including ERP, CRM, and business intelligence platforms.",
-        icon: "Building",
-      },
-      {
-        title: "Cloud Migration & Strategy",
-        description: "Strategic cloud adoption, migration planning, and multi-cloud management.",
-        icon: "Cloud",
-      },
-      {
-        title: "IT Infrastructure Management",
-        description: "Proactive monitoring, maintenance, and optimization of IT infrastructure.",
-        icon: "Server",
-      },
-    ],
-    technologies: [
-      { name: "Azure", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" },
-      { name: "AWS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" },
-      { name: "Kubernetes", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" },
-      { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
-      { name: "Terraform", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" },
-      { name: "ServiceNow", icon: "https://www.vectorlogo.zone/logos/servicenow/servicenow-icon.svg" },
-      { name: "Salesforce", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/salesforce/salesforce-original.svg" },
-      { name: "SAP", icon: "https://www.vectorlogo.zone/logos/sap/sap-icon.svg" },
-    ],
-    benefits: [
-      "Reduced operational costs through automation and optimization",
-      "Enhanced security posture and regulatory compliance",
-      "Improved business agility and faster time-to-market",
-      "Seamless integration across all business systems",
-      "Future-proof technology foundation for growth",
-      "24/7 expert support and monitoring",
-    ],
-    caseStudies: [
-      {
-        title: "Enterprise Digital Transformation",
-        description: "Led a comprehensive digital transformation for a major financial institution, modernizing core banking systems and implementing AI-driven customer service.",
-        image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80",
-        results: ["60% faster transaction processing", "40% reduction in IT costs", "99.99% system uptime"],
-      },
-      {
-        title: "Cybersecurity Overhaul",
-        description: "Implemented zero-trust security architecture for a healthcare provider, protecting sensitive patient data across 50+ locations.",
-        image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&q=80",
-        results: ["Zero security breaches", "100% HIPAA compliance", "70% faster threat detection"],
-      },
-      {
-        title: "Legacy Modernization",
-        description: "Migrated a 20-year-old monolithic system to microservices architecture for a logistics company.",
-        image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&q=80",
-        results: ["10x faster deployments", "50% infrastructure cost savings", "300% improved scalability"],
-      },
-    ],
-    pricing: {
-      starting: "$15,000",
-      note: "Consulting engagements typically start with an assessment phase. Ongoing managed services available.",
-    },
-    faqs: [
-      {
-        question: "How do you approach digital transformation projects?",
-        answer: "We start with a comprehensive assessment of your current state, business objectives, and technology landscape. We then develop a phased roadmap that prioritizes quick wins while building toward long-term transformation goals. Our approach minimizes disruption while maximizing value delivery.",
-      },
-      {
-        question: "Can you work with our existing IT team?",
-        answer: "Absolutely! We often work alongside internal IT teams, providing specialized expertise and additional capacity. We can also provide training and knowledge transfer to ensure your team can maintain and evolve solutions independently.",
-      },
-      {
-        question: "What industries do you specialize in?",
-        answer: "We have deep expertise in financial services, healthcare, manufacturing, retail, and logistics. However, our technology solutions are adaptable to virtually any industry, and we bring cross-industry best practices to every engagement.",
-      },
-      {
-        question: "How do you ensure security during system integrations?",
-        answer: "Security is embedded in everything we do. We follow security-by-design principles, conduct thorough risk assessments, implement encryption and access controls, and ensure compliance with relevant regulations. All integrations undergo rigorous security testing.",
-      },
-    ],
-  },
+// Our approach combines strategic consulting with practical implementation, ensuring that technology investments align with business objectives and deliver measurable results. We work with organizations of all sizes, from startups to large enterprises, across various industries.`,
+//     icon: "Cpu",
+//     category: "technology",
+//     image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&q=80",
+//     heroImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1920&q=80",
+//     gallery: [
+//       "https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?w=800&q=80",
+//       "https://images.unsplash.com/photo-1573164713988-8665fc963095?w=800&q=80",
+//       "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80",
+//     ],
+//     features: [
+//       {
+//         title: "IT Strategy & Consulting",
+//         description: "Strategic technology roadmaps aligned with your business goals and industry best practices.",
+//         icon: "Compass",
+//       },
+//       {
+//         title: "System Integration",
+//         description: "Seamless integration of disparate systems, applications, and data sources for unified operations.",
+//         icon: "Link",
+//       },
+//       {
+//         title: "Cybersecurity Solutions",
+//         description: "Comprehensive security assessments, implementation, and managed security services.",
+//         icon: "Shield",
+//       },
+//       {
+//         title: "Digital Transformation",
+//         description: "End-to-end digital transformation initiatives that revolutionize business processes.",
+//         icon: "Sparkles",
+//       },
+//       {
+//         title: "Legacy System Modernization",
+//         description: "Upgrade and modernize outdated systems while preserving critical business logic.",
+//         icon: "RefreshCw",
+//       },
+//       {
+//         title: "Enterprise Software Solutions",
+//         description: "Custom enterprise applications including ERP, CRM, and business intelligence platforms.",
+//         icon: "Building",
+//       },
+//       {
+//         title: "Cloud Migration & Strategy",
+//         description: "Strategic cloud adoption, migration planning, and multi-cloud management.",
+//         icon: "Cloud",
+//       },
+//       {
+//         title: "IT Infrastructure Management",
+//         description: "Proactive monitoring, maintenance, and optimization of IT infrastructure.",
+//         icon: "Server",
+//       },
+//     ],
+//     technologies: [
+//       { name: "Azure", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" },
+//       { name: "AWS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" },
+//       { name: "Kubernetes", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" },
+//       { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+//       { name: "Terraform", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" },
+//       { name: "ServiceNow", icon: "https://www.vectorlogo.zone/logos/servicenow/servicenow-icon.svg" },
+//       { name: "Salesforce", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/salesforce/salesforce-original.svg" },
+//       { name: "SAP", icon: "https://www.vectorlogo.zone/logos/sap/sap-icon.svg" },
+//     ],
+//     benefits: [
+//       "Reduced operational costs through automation and optimization",
+//       "Enhanced security posture and regulatory compliance",
+//       "Improved business agility and faster time-to-market",
+//       "Seamless integration across all business systems",
+//       "Future-proof technology foundation for growth",
+//       "24/7 expert support and monitoring",
+//     ],
+//     caseStudies: [
+//       {
+//         title: "Enterprise Digital Transformation",
+//         description: "Led a comprehensive digital transformation for a major financial institution, modernizing core banking systems and implementing AI-driven customer service.",
+//         image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80",
+//         results: ["60% faster transaction processing", "40% reduction in IT costs", "99.99% system uptime"],
+//       },
+//       {
+//         title: "Cybersecurity Overhaul",
+//         description: "Implemented zero-trust security architecture for a healthcare provider, protecting sensitive patient data across 50+ locations.",
+//         image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&q=80",
+//         results: ["Zero security breaches", "100% HIPAA compliance", "70% faster threat detection"],
+//       },
+//       {
+//         title: "Legacy Modernization",
+//         description: "Migrated a 20-year-old monolithic system to microservices architecture for a logistics company.",
+//         image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&q=80",
+//         results: ["10x faster deployments", "50% infrastructure cost savings", "300% improved scalability"],
+//       },
+//     ],
+//     pricing: {
+//       starting: "$15,000",
+//       note: "Consulting engagements typically start with an assessment phase. Ongoing managed services available.",
+//     },
+//     faqs: [
+//       {
+//         question: "How do you approach digital transformation projects?",
+//         answer: "We start with a comprehensive assessment of your current state, business objectives, and technology landscape. We then develop a phased roadmap that prioritizes quick wins while building toward long-term transformation goals. Our approach minimizes disruption while maximizing value delivery.",
+//       },
+//       {
+//         question: "Can you work with our existing IT team?",
+//         answer: "Absolutely! We often work alongside internal IT teams, providing specialized expertise and additional capacity. We can also provide training and knowledge transfer to ensure your team can maintain and evolve solutions independently.",
+//       },
+//       {
+//         question: "What industries do you specialize in?",
+//         answer: "We have deep expertise in financial services, healthcare, manufacturing, retail, and logistics. However, our technology solutions are adaptable to virtually any industry, and we bring cross-industry best practices to every engagement.",
+//       },
+//       {
+//         question: "How do you ensure security during system integrations?",
+//         answer: "Security is embedded in everything we do. We follow security-by-design principles, conduct thorough risk assessments, implement encryption and access controls, and ensure compliance with relevant regulations. All integrations undergo rigorous security testing.",
+//       },
+//     ],
+//   },
   {
     id: 8,
     slug: "real-estate-technology",
-    title: "Real Estate Technology Solutions (PropTech)",
+    title: "Real Estate Development & Management",
     shortDescription: "PropTech solutions revolutionizing property management, sales, and real estate operations.",
     description: "We build innovative real estate technology solutions including property management systems, virtual tours, smart building IoT integration, and real estate marketplaces that transform how properties are bought, sold, managed, and experienced.",
     longDescription: `The real estate industry is undergoing a massive digital transformation. From virtual property tours to AI-powered property valuations, technology is reshaping every aspect of real estate. Our PropTech solutions help real estate professionals, property managers, and developers leverage cutting-edge technology to stay competitive and deliver exceptional experiences.
@@ -1762,10 +1761,10 @@ export const RELATED_SERVICES: Record<string, string[]> = {
   "web-mobile-development": ["ui-ux-design", "cloud-solutions-devops", "ecommerce-solutions"],
   "ui-ux-design": ["web-mobile-development", "digital-marketing-seo", "ecommerce-solutions"],
   "digital-marketing-seo": ["ui-ux-design", "web-mobile-development", "ecommerce-solutions"],
-  "cloud-solutions-devops": ["web-mobile-development", "ai-machine-learning", "ecommerce-solutions"],
-  "ai-machine-learning": ["web-mobile-development", "cloud-solutions-devops", "digital-marketing-seo"],
-  "ecommerce-solutions": ["web-mobile-development", "ui-ux-design", "digital-marketing-seo"],
-  "technology-solutions": ["cloud-solutions-devops", "ai-machine-learning", "web-mobile-development"],
+  // "cloud-solutions-devops": ["web-mobile-development", "ai-machine-learning", "ecommerce-solutions"],
+  // "ai-machine-learning": ["web-mobile-development", "cloud-solutions-devops", "digital-marketing-seo"],
+  // "ecommerce-solutions": ["web-mobile-development", "ui-ux-design", "digital-marketing-seo"],
+  // "technology-solutions": ["cloud-solutions-devops", "ai-machine-learning", "web-mobile-development"],
   "real-estate-technology": ["web-mobile-development", "ai-machine-learning", "ui-ux-design"],
   "agricultural-technology": ["ai-machine-learning", "cloud-solutions-devops", "web-mobile-development"],
   "health-technology": ["ai-machine-learning", "cloud-solutions-devops", "web-mobile-development"],
@@ -1870,11 +1869,11 @@ export const COMPANY_MILESTONES = [
 export const TEAM_MEMBERS_FULL = [
   {
     id: 1,
-    name: "Christian Kayan",
-    role: "Founder & CEO",
+    name: "Kayan Emuerhuvwu",
+    role: "Managing Director",
     department: "Leadership",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80",
-    bio: "Oluwaseun has over 15 years of experience in software development and digital strategy. He founded Qwik Multi Services with a vision to help African businesses compete globally through technology.",
+    bio: "Kayan has over 15 years of experience in software development and digital strategy. He founded Qwik Multi Services with a vision to help African businesses compete globally through technology.",
     expertise: ["Strategic Planning", "Business Development", "Technology Vision"],
     social: {
       twitter: "https://twitter.com",
@@ -1983,10 +1982,10 @@ export const OFFICE_LOCATIONS = [
     city: "Abuja",
     country: "Nigeria",
     type: "Headquarters",
-    address: "B96 Sahara Estate, Gwarimpa, Abuja, Nigeria",
+    address: "B96 Sahara Home Security Estate, Gwarimpa,, Abuja, FCT Nigeria",
     image: "https://images.unsplash.com/photo-1618828665011-0abd973f7bb8?w=800&q=80",
     phone: "+2348141646357",
-    email: "Abuja@qwikmultiservices.com",
+    email: "contact@qwikmultiservices.com",
   },
   {
     city: "London",
@@ -2081,8 +2080,8 @@ export const CONTACT_METHODS = [
     id: "email",
     title: "Email Us",
     description: "Send us an email anytime",
-    value: "hello@qwikmultiservices.com",
-    href: "mailto:hello@qwikmultiservices.com",
+    value: "contact@qwikmultiservices.com",
+    href: "mailto:contact@qwikmultiservices.com",
     icon: "Mail",
     color: "bg-blue-500/10 text-blue-500",
   },
@@ -2099,8 +2098,8 @@ export const CONTACT_METHODS = [
     id: "whatsapp",
     title: "WhatsApp",
     description: "Quick response guaranteed",
-    value: "+2348141646357",
-    href: "https://wa.me/2348141646357",
+    value: "+2347067586867",
+    href: "https://wa.me/2347067586867",
     icon: "MessageCircle",
     color: "bg-emerald-500/10 text-emerald-500",
   },
@@ -2108,7 +2107,7 @@ export const CONTACT_METHODS = [
     id: "location",
     title: "Visit Us",
     description: "Come say hello",
-    value: "B96 Sahara Estate, Gwarimpa, Abuja, Nigeria",
+    value: "",
     href: "https://maps.google.com/?q=B96+Sahara+Estate+Gwarimpa+Abuja+Nigeria",
     icon: "MapPin",
     color: "bg-cyan-500/10 text-cyan-500",
