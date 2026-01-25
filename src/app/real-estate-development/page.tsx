@@ -5,7 +5,7 @@ import { FeaturedProperties } from "@/components/real-estate/featured-properties
 import { RealEstateProcess } from "@/components/real-estate/process";
 import { RealEstateFeatures } from "@/components/real-estate/features";
 import { PropertyPortfolio } from "@/components/real-estate/portfolio";
-import { RealEstateTestimonials } from "@/components/real-estate/testimonials";
+// import { RealEstateTestimonials } from "@/components/real-estate/testimonials";
 import { RealEstateStats } from "@/components/real-estate/stats";
 import { RealEstateFAQ } from "@/components/real-estate/faq";
 import { RealEstateCTA } from "@/components/real-estate/cta";

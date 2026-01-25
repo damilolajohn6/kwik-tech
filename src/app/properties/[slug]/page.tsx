@@ -10,15 +10,16 @@ import {
 } from "@/lib/real-estate-constants";
 
 interface PropertyPageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 export async function generateMetadata({
   params,
 }: PropertyPageProps): Promise<Metadata> {
-  const property = getPropertyBySlug(params.slug);
+  const { slug } = await params;
+  const property = getPropertyBySlug(slug);
 
   if (!property) {
     return {
@@ -43,8 +44,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function PropertyPage({ params }: PropertyPageProps) {
-  const property = getPropertyBySlug(params.slug);
+export default async function PropertyPage({ params }: PropertyPageProps) {
+  const { slug } = await params;
+  const property = getPropertyBySlug(slug);
 
   if (!property) {
     notFound();
