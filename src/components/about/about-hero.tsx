@@ -130,7 +130,7 @@ export function AboutHero() {
           <div className="relative aspect-[21/9] rounded-3xl overflow-hidden border border-border shadow-2xl">
             <Image
               // src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1600&q=80"
-              src="./images/kayan1.jpg"
+              src="/kayan1.jpg"
               alt="Our team at work"
               fill
               className="object-cover"

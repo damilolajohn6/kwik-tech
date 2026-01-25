@@ -24,7 +24,7 @@ export function AboutStory() {
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden border border-border">
               <Image
                 // src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&q=80"
-                src="./images/kayan2.jpg"
+                src="/kayan2.jpg"
                 alt="Our journey"
                 fill
                 className="object-cover"
@@ -41,7 +41,7 @@ export function AboutStory() {
             >
               <Image
                 // src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=400&q=80"
-                src="./images/kayan3.jpg"
+                src="/kayan3.jpg"
                 alt="Early days"
                 fill
                 className="object-cover"
@@ -108,7 +108,7 @@ export function AboutStory() {
                 <div className="w-10 h-10 rounded-full overflow-hidden">
                   <Image
                     // src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80"
-                    src="./images/kayan3.jpg"
+                    src="/kayan3.jpg"
                     alt="Christian Kayan"
                     width={40}
                     height={40}
