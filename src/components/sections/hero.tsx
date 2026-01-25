@@ -176,14 +176,14 @@ export function Hero() {
 
                 {/* Rating */}
                 <div className="flex items-center gap-2">
-                  <div className="flex gap-0.5">
+                  {/* <div className="flex gap-0.5">
                     {[...Array(5)].map((_, i) => (
                       <Star
                         key={i}
                         className="w-4 h-4 fill-yellow-500 text-yellow-500"
                       />
                     ))}
-                  </div>
+                  </div> */}
                   {/* <span className="text-sm text-foreground-muted">
                     5.0 on Clutch
                   </span> */}
