@@ -24,7 +24,7 @@ export function ContactMap() {
             Visit Our Office
           </h2>
           <p className="text-foreground-muted max-w-xl mx-auto">
-            We'd love to meet you in person. Drop by our Abuja headquarters 
+            We&apos;d love to meet you in person. Drop by our Abuja headquarters 
             for a coffee and a chat about your project.
           </p>
         </motion.div>
@@ -100,18 +100,18 @@ export function ContactMap() {
               type: "Headquarters",
               address: "B96 Sahara Estate, Gwarimpa",
             },
-            {
-              city: "London",
-              country: "United Kingdom",
-              type: "Regional Office",
-              address: "456 Tech Hub",
-            },
-            {
-              city: "Dubai",
-              country: "UAE",
-              type: "Regional Office",
-              address: "789 Business Bay",
-            },
+            // {
+            //   city: "London",
+            //   country: "United Kingdom",
+            //   type: "Regional Office",
+            //   address: "456 Tech Hub",
+            // },
+            // {
+            //   city: "Dubai",
+            //   country: "UAE",
+            //   type: "Regional Office",
+            //   address: "789 Business Bay",
+            // },
           ].map((location) => (
             <div
               key={location.city}
